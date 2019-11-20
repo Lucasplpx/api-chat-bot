@@ -19,6 +19,6 @@ app.use(routes);
 
 require('./src/startup/chat')(io);
 
-server.listen(PORT, ()=> {
+server.listen(PORT || 3000, ()=> {
     console.log(`Server has started on port ${PORT}`);
 });
